@@ -20,6 +20,20 @@
     
 }
 
+.flex{
+    display: flex;
+}
+
+h2.titulo{
+    color: #000000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #c20606;
+}
+
 header .interface {
     padding: 25px 20px;
     height: calc(0 - 80px);
@@ -29,6 +43,7 @@ header .interface {
 }
 
 body {
+    width: auto;
     width: 100%;
     background-color: #ffffff;
     height: 100vh;
@@ -131,8 +146,8 @@ section.topo-do-site .flex{
     margin: 0 auto;
 }
 
-.topo-do-site {
-    padding: 0 4%;
+section.topo-do-site{
+    padding: 40px 4%;
 }
 
 .topo-do-site h1 {
@@ -175,11 +190,47 @@ section.topo-do-site .flex{
 }
 
 /*ESTILO ANIMES*/
-section.animes-list {
-    padding: 40px 4%;
+
+section.animes-list{
+    padding: 30px 4%;
+    box-shadow: 0 0 40px #00ff0821;
 }
 
 
+div.box {
+    transition: .2s;
+    padding: 20px 9%;
+	width: 350px;
+	display: inline-block;
+}
+
+div.box .one-piece{
+    font-size: 25px;
+    color: #020202;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    padding-left: 60px;
+    width: 500px;
+}
+
+div.box span{
+    text-shadow: #000000;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 700;
+        padding-left: 36px;
+        width: 500px;
+        display: inline-block;
+    }
+
+div.box img{
+    background-color: #000;
+    border-radius: 50px; 
+    width: 250px;
+}
+
+div.box:hover{
+    transform: scale(1.05);
+}
 
 
 
