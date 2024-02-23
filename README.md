@@ -30,7 +30,7 @@ O Okami Animes é um site dedicado a oferecer uma experiência excepcional para 
 
 ## Feedback
 
-Valorizamos muito o feedback dos nossos usuários. Se você tiver alguma sugestão, dúvida ou problema técnico, não hesite em nos contatar através do nosso formulário de contato ou pelo e-mail: feedback@okamianimes.com.
+Valorizamos muito o feedback dos nossos usuários. Se você tiver alguma sugestão, dúvida ou problema técnico, não hesite em nos contatar através do nosso formulário de contato ou pelo e-mail: matheus@cdevs.tech.
 
 ## Sobre Nós
 
