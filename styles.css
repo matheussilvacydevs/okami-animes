@@ -1,0 +1,268 @@
+* {
+    /* Desabilitar seleção de texto */
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    /* FIM do Desabilitar seleção de texto */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #000000;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #c20606;
+}
+
+header .interface {
+    padding: 18PX 20px;
+    height: calc(0 - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    width: auto;
+    width: 100%;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.interface .logo {
+    font-size: 33px;
+    color: #0f2182;
+    font-weight: 600;
+}
+
+
+.header {
+
+    padding: 48px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    font-size: 18px;
+    font-style: normal;
+    font-family: "Raleway", sans-serif;
+    transition: .2s;
+    text-decoration: none;
+    color: #0a0a0ad2;
+    transition: .2s;
+    display: inline-block;
+
+}
+
+header .links ul a:hover {
+    color: #eb0000;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/* TEXTO LOGO */
+
+header .upper {
+    font-weight: 800;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+header .lower {
+    font-size: 28px;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    color: rgb(204, 0, 0);
+}
+
+header .logo:hover {
+    transform: scale(1.05);
+    color: #ff0000;
+}
+
+
+
+
+header nav ul {
+    list-style: none;
+}
+
+header nav.menu-desktop ul li {
+    font-weight: 700;
+    transition: .2s;
+    padding: 0 48px;
+    display: inline-block;
+}
+
+
+
+header .logo {
+    transition: .2s;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    /* para garantir que fique sobreposto a outros elementos */
+    background-color: #ffffff;
+    /* Cor de fundo do cabeçalho */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.199);
+    /* Sombra com deslocamento de 0px na horizontal, 2px na vertical, desfoque de 4px e cor RGBA */
+    padding: 10px 4%;
+    /* Espaçamento interno do cabeçalho */
+}
+
+button.btn-login {
+    width: 118px;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff0000;
+    border: 0;
+    border: 0px solid #000000;
+    transition: .2s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+button.btn-login:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.20rem 0.25rem 0rem rgb(0, 0, 0);
+    background-color: #fa0000f8;
+    color: #ffffff;
+}
+
+/* TOPO-SITE */
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    display: flex;
+}
+
+.topo-do-site .interface {
+    margin: 0 auto;
+}
+
+body.topo-do-site {
+    padding: 100px 4%;
+
+}
+
+.topo-do-site h1 {
+    margin-left: 80px;
+    padding-top: 250px;
+    white-space: nowrap;
+    color: #222222;
+    font-size: 42px;
+    line-height: 40px;
+
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #e20000;
+}
+
+.topo-do-site .txt-topo-site p {
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 250px;
+    font-size: 19px;
+    font-family: 'Ubuntu-Regular', sans-serif;
+    color: #181818;
+
+}
+
+.topo-do-site .img-topo-site img {
+    margin-top: 100px;
+    margin-left: 0;
+    width: 100%;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+/*ESTILO ANIMES*/
+
+section.animes-list {
+    padding: 50px 4%;
+}
+
+
+div.box {
+    transition: .2s;
+    padding: 20px 4%;
+    width: 350px;
+    display: inline-block;
+}
+
+div.box .one-piece {
+    font-size: 20px;
+    color: #020202;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
+    padding-left: 80px;
+    width: 500px;
+}
+
+div.box span {
+    text-shadow: #000000;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+    padding-left: 36px;
+    width: 500px;
+    display: inline-block;
+}
+
+div.box img {
+    box-shadow: 0 0 6px #08080888;
+    background-color: #ffffff;
+    border-radius: 30px;
+    transition: .3s;
+    width: 250px;
+}
+
+div.box img:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.30rem .30rem 0rem #050505;
+}
