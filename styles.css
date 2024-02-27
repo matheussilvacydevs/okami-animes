@@ -25,7 +25,7 @@
 }
 
 h2.titulo {
-    color: #000000;
+    color: #ffffff;
     font-size: 38px;
     text-align: center;
 }
@@ -43,17 +43,13 @@ header .interface {
 }
 
 body {
+    background-size: cover;
     width: auto;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #0c0c0c;
     height: 100vh;
 }
 
-.interface .logo {
-    font-size: 33px;
-    color: #0f2182;
-    font-weight: 600;
-}
 
 
 .header {
@@ -73,14 +69,14 @@ header a {
     font-family: "Raleway", sans-serif;
     transition: .2s;
     text-decoration: none;
-    color: #0a0a0ad2;
+    color: #ff0000d2;
     transition: .2s;
     display: inline-block;
 
 }
 
 header .links ul a:hover {
-    color: #eb0000;
+    color: #ffffff;
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -88,13 +84,13 @@ header .links ul a:hover {
 
 /* TEXTO LOGO */
 
-header .upper {
+.upper {
     font-weight: 800;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
-header .lower {
+.lower {
     font-size: 28px;
     font-family: "Rubik Wet Paint", system-ui;
     font-weight: 800;
@@ -102,7 +98,7 @@ header .lower {
     color: rgb(204, 0, 0);
 }
 
-header .logo:hover {
+.logo:hover {
     transform: scale(1.05);
     color: #ff0000;
 }
@@ -129,11 +125,13 @@ header .logo {
 }
 
 header {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     width: 100%;
     position: fixed;
     z-index: 9999;
     /* para garantir que fique sobreposto a outros elementos */
-    background-color: #ffffff;
+    background-color: #000000dc;
     /* Cor de fundo do cabeçalho */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.199);
     /* Sombra com deslocamento de 0px na horizontal, 2px na vertical, desfoque de 4px e cor RGBA */
@@ -142,7 +140,7 @@ header {
 }
 
 button.btn-login {
-    width: 118px;
+    width: 160px;
     padding: 10px 0;
     color: white;
     font-size: 18px;
@@ -159,7 +157,7 @@ button.btn-login {
 
 button.btn-login:hover {
     transform: translate(-0.25rem, -0.25rem);
-    box-shadow: 0.20rem 0.25rem 0rem rgb(0, 0, 0);
+    box-shadow: 0.20rem 0.25rem 0rem #f0f0f0;
     background-color: #fa0000f8;
     color: #ffffff;
 }
@@ -181,11 +179,16 @@ body.topo-do-site {
 
 }
 
+body .topo-do-site {
+    background-color: #08080800;
+    background-image: url('/src/img/anime-background.png');
+}
+
 .topo-do-site h1 {
     margin-left: 80px;
     padding-top: 250px;
     white-space: nowrap;
-    color: #222222;
+    color: #e90000;
     font-size: 42px;
     line-height: 40px;
 
@@ -198,15 +201,15 @@ body.topo-do-site {
 .topo-do-site .txt-topo-site p {
     margin-left: 90px;
     margin-top: 10px;
-    margin-bottom: 250px;
+    margin-bottom: 390px;
     font-size: 19px;
     font-family: 'Ubuntu-Regular', sans-serif;
-    color: #181818;
+    color: #e2e2e2;
 
 }
 
 .topo-do-site .img-topo-site img {
-    margin-top: 100px;
+    margin-top: 170px;
     margin-left: 0;
     width: 100%;
     animation: flutuar 2s ease-in-out infinite alternate;
@@ -225,7 +228,14 @@ body.topo-do-site {
 /*ESTILO ANIMES*/
 
 section.animes-list {
-    padding: 50px 4%;
+    background-color: #13131300;
+    padding: 30px 4%;
+}
+
+
+.anime-boxing{
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -257,12 +267,69 @@ div.box span {
 div.box img {
     box-shadow: 0 0 6px #08080888;
     background-color: #ffffff;
-    border-radius: 30px;
+    border-radius: 10px;
     transition: .3s;
     width: 250px;
 }
 
 div.box img:hover {
     transform: translate(-0.25rem, -0.25rem);
-    box-shadow: 0.30rem .30rem 0rem #050505;
+    box-shadow: 0.40rem .40rem 0rem #050505;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+    padding: 4px 4%;
+    box-shadow: 0 0 40px #a8a8a87c;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #ff0000;
+}
+
+
+footer .line-footer p i {
+    margin-right: 10px;
+    color: #ff0800;
+    font-size: 22px;
+
+}
+
+
+footer .line-footer p {
+    padding-top: 20px;
+    text-align: center;
+    bottom: 0;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ff0000;
+    font-size: 16px;
+
+}
+
+.btn-social button {
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: 800;
+    border: none;
+    background-color: #eb0000;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social button:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.20rem 0.25rem 0rem rgb(0, 0, 0);
 }

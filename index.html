@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="styles.css">
                         <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +30,7 @@
     <header>
     <div class="interface" id="interface">
         <div class="logo">
-            <a class="container">
+            <a href="#topo-do-site" class="container">
                 <div class="upper">TEAM</div>
                 <div class="lower"><span>CDEVS</span></div>
             </a>
@@ -42,7 +42,7 @@
                 <li><a href="#animes-list">Animes</a></li>
                 <li><a href="#animes-mangas">Mangás</a></li>
                 <li><a href="#animes-filmes">Filmes</a></li>
-                <button class="btn-login">Login</button>
+                <button class="btn-login" id="btn-login">Login</button>
             </ul>
           </div><!--links-->
         </nav><!--cabeçalho-->
@@ -75,29 +75,29 @@
                     <div class="flex">
                     <div class="anime-boxing">
                         <div class="box">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0"/>
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0" id="one-piece"/>
                             <span class="one-piece"> One Piece </span>
                         </div>
                         <div class="box">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0"/>
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0" id="one-piece"/>
                             <span> Titulo da segunda imagem </span>
                         </div>
 
                         <div class="box">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0"/>
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0" id="one-piece"/>
                             <span> Titulo da segunda imagem </span>
                         </div>
 
                         <div class="box">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0"/>
+                            <img class="imagem" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0" id="one-piece"/>
                             <span> Titulo da segunda imagem </span>
                         </div>
                         <div class="box">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0"/>
+                            <img class="imagem" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0" id="one-piece"/>
                             <span> Titulo da segunda imagem </span>
                         </div>
                         <div class="box">
-                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0"/>
+                            <img class="imagem" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7f302c83-632c-4927-a659-0dfb6b024b0d/d8p12ep-69f36217-08fb-4193-a5f4-f2e893bc6029.png/v1/fit/w_512,h_512/one_piece_circle_icon_by_saiyansaga_d8p12ep-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvN2YzMDJjODMtNjMyYy00OTI3LWE2NTktMGRmYjZiMDI0YjBkXC9kOHAxMmVwLTY5ZjM2MjE3LTA4ZmItNDE5My1hNWY0LWYyZTg5M2JjNjAyOS5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.RlGK1rr0I_k7VSyz0Nesi5q1qSXgpyVeVv5pVBK4xk0" id="one-piece"/>
                             <span> Titulo da segunda imagem </span>
                         </div>
                     </div>
@@ -181,6 +181,30 @@
         </section>
     </main>
 
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo">
+                        <a class="container">
+                            <div class="upper">TEAM</div>
+                            <div class="lower"><span>CDEVS</span></div>
+                        </a>
+                        <!--<img src="images/MTS (2).svg" alt="Logo">-->
+                    </div> <!--logo-->
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/matheussilvacydevs/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://github.com/matheussilvacydevs/" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/devstudding/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="mailto:matheussilva706@hotmail.com"><button><i class="bi bi-envelope-paper"></i></button></a>
+                    </div><!--btn-social-->                        
+                </div><!--flex-->
+            </div><!--line-footer-->
+            <div class="line-footer borda">
+                <p>© Copyright Okami Animes 2024 Cyber devs Team, All Rights Reserved.</p>
+            </div><!--line-footer-borda--> b
+        </div><!--interface-->
+    </footer>
     
     <script src="scripts.js" defer></script>
     

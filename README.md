@@ -2,7 +2,7 @@
 
 Bem-vindo ao **Okami Animes**!
 
-![Okami Animes Logo](https://lh3.googleusercontent.com/d/1Enf3EU0Xm3xEwYO07HRuzrxKHyG2eC18)
+![Okami Animes Logo](https://i.ibb.co/CngDW4c/logo.png)
 
 O Okami Animes é um site dedicado a oferecer uma experiência excepcional para os fãs de animes e mangás. Com uma ampla variedade de títulos populares e clássicos, nosso objetivo é proporcionar entretenimento de alta qualidade para todos os entusiastas da cultura japonesa.
 
@@ -30,7 +30,7 @@ O Okami Animes é um site dedicado a oferecer uma experiência excepcional para 
 
 ## Feedback
 
-Valorizamos muito o feedback dos nossos usuários. Se você tiver alguma sugestão, dúvida ou problema técnico, não hesite em nos contatar através do nosso formulário de contato ou pelo e-mail: matheus@cdevs.tech.
+Valorizamos muito o feedback dos nossos usuários. Se você tiver alguma sugestão, dúvida ou problema técnico, não hesite em nos contatar através do nosso formulário de contato ou pelo e-mail: feedback@okamianimes.com.
 
 ## Sobre Nós
 
