@@ -131,7 +131,7 @@ header {
     position: fixed;
     z-index: 9999;
     /* para garantir que fique sobreposto a outros elementos */
-    background-color: #000000dc;
+    background-color: #000000f3;
     /* Cor de fundo do cabeçalho */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.199);
     /* Sombra com deslocamento de 0px na horizontal, 2px na vertical, desfoque de 4px e cor RGBA */
@@ -140,7 +140,8 @@ header {
 }
 
 button.btn-login {
-    width: 160px;
+    width: 120px;
+    margin-right: 35px;
     padding: 10px 0;
     color: white;
     font-size: 18px;
@@ -149,11 +150,30 @@ button.btn-login {
     border: 0;
     border: 0px solid #000000;
     transition: .2s;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
+button.btn-register {
+    width: 120px;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff0000;
+    border: 0;
+    border: 0px solid #000000;
+    transition: .2s;
+    border-radius: 20px;
+    cursor: pointer;
+}
 
+button.btn-register:hover{
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.20rem 0.25rem 0rem #f0f0f0;
+    background-color: #fa0000f8;
+    color: #ffffff;
+}
 
 button.btn-login:hover {
     transform: translate(-0.25rem, -0.25rem);

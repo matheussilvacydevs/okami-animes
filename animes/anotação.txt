@@ -1,0 +1,124 @@
+id="animeResults"
+
+<div class="degrade-horizontal-rounded">
+
+
+<section>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Lista de Animes</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="anime-list">
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+        </main>
+    </section>
+
+
+
+ <section>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Lista de Animes</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="anime-list">
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+                            <div class="anime">
+                                <img src="images/MTS (2).svg" alt="Anime">
+                                <h3>Nome do Anime</h3>
+                                <p>Descrição do anime</p>
+                            </div>
+        </main>
+    </section>
