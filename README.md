@@ -2,7 +2,7 @@
 
 Bem-vindo ao **Okami Animes**!
 
-![Okami Animes Logo](https://i.ibb.co/CngDW4c/logo.png)
+![Okami Animes Logo](https://lh3.googleusercontent.com/d/1Enf3EU0Xm3xEwYO07HRuzrxKHyG2eC18)
 
 O Okami Animes é um site dedicado a oferecer uma experiência excepcional para os fãs de animes e mangás. Com uma ampla variedade de títulos populares e clássicos, nosso objetivo é proporcionar entretenimento de alta qualidade para todos os entusiastas da cultura japonesa.
 
