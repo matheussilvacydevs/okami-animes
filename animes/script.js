@@ -139,3 +139,64 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+ // Função para fazer uma solicitação à API do AnimeDB
+ function fetchAnimeData() {
+    // URL da API do AnimeDB para buscar informações de anime
+    var apiUrl = 'https://api.animedb.com/anime';
+
+    // Realiza uma solicitação GET para a API
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Quando os dados forem recebidos com sucesso, chama a função para exibir os cards
+            displayAnimeCards(data);
+        })
+        .catch(error => {
+            console.error('Erro ao buscar dados do AnimeDB:', error);
+        });
+}
+
+// Função para exibir os cards de anime com os dados recebidos da API
+function displayAnimeCards(animeData) {
+    var animeContainer = document.getElementById('anime-container');
+
+    // Limpa qualquer conteúdo existente no contêiner
+    animeContainer.innerHTML = '';
+
+    // Itera sobre os dados de anime e cria um card para cada um
+    animeData.forEach(anime => {
+        var card = document.createElement('div');
+        card.classList.add('anime-card');
+        card.innerHTML = `
+            <h2>${anime.title}</h2>
+            <img src="${anime.image}" alt="${anime.title}">
+            <p>${anime.description}</p>
+        `;
+        animeContainer.appendChild(card);
+    });
+}
+
+// Chama a função para buscar e exibir os dados de anime ao carregar a página
+fetchAnimeData();
+
+$(document).ready(function(){
+    // Fazer requisição para a API Jikan (substitua pela sua URL real)
+    $.ajax({
+        url: 'https://api.jikan.moe/v3/top/anime/1',
+        method: 'GET',
+        success: function(data) {
+            // Puxar o nome do primeiro anime retornado pela API
+            var animeTitle = data.top[0].title;
+            // Puxar a URL da imagem do primeiro anime retornado pela API
+            var animeImage = data.top[0].image_url;
+            
+            // Atualizar o nome do anime no HTML
+            $('#animeTitle').text(animeTitle);
+            // Atualizar a imagem do anime no HTML
+            $('#animeImage').attr('src', animeImage);
+        },
+        error: function() {
+            console.error('Erro ao obter dados da API.');
+        }
+    });
+});

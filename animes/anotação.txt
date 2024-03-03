@@ -1,3 +1,53 @@
+<div class="image-container">
+                            <img src="https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/42e809bd-f025-4b88-b21e-f1aae392427e.webp" alt="Imagem 1">
+                            <div class="degrade"></div>
+                            <div class="title-anime"><h1>One Piece</h1></div>
+                            <div class="des-anime"><p><span>Sinopse:</span>
+                                A trama segue Monkey D. Luffy, um 
+                                                    jovem que tem a ambição de se tornar o Rei dos piratas
+                                                      aquele que consegue todas as coisas do mundo. Para isso,
+                                                      ele precisa encontrar o One Piece, o tesouro lendário deixado 
+                                                      por Gol D. Roger, primeiro rei dos piratas.</p></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/49c8ebd0-ecf8-448b-9fdd-3ce5710c3fc9.webp" alt="Imagem 2">
+                            <div class="degrade"></div>
+                            <div class="title-anime"><h1>shangri-la frontier</h1></div>
+                            <div class="des-anime2"><p><span>Sinopse:</span>         
+                                Rakurou Hizutome, um rapaz apaixonado por 
+                                                    "jogos ruins", encontra seu próximo 
+                                                    desafio em "Shangri-la Frontier", que é conhecido
+                                                     como "o jogo divino"! Em um mundo 
+                                                    imenso com 30 milhões de participantes, Rakurou conhecerá
+                                                    novos companheiros, encontrará um antigo rival e 
+                                                    também mudará o destino de todos os jogadores!</p></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-container">
+                            <img src="https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/954be18c-90d8-4308-8efc-abffc3c77962.webp" alt="Imagem 3">
+                            <div class="degrade"></div>
+                            <div class="title-anime"><h1>The Ancient Magus' Bride</h1></div>
+                            <div class="des-anime3"><p><span>Sinopse:</span>
+                                Sinopse: Chise Hattori, 15 anos. Órfã solitária, desesperançosa
+                                 e sem meios para sobreviver. Em troca de uma fortuna, a jovem
+                                  que não possui nada é comprada por uma criatura não humana
+                                   que convive com a eternidade e se diz mago</p></div>
+                        </div>
+                    </div>
+
+
+
+<div class="slide">
+                        <div class="image-container">
+                            <img src="https://a.storyblok.com/f/178900/1127x634/0c67a0bf95/b4a122a64aa1917a729738e643c375c31595511983_main.png/m/filters:quality(95)format(webp)" alt="Imagem 5">
+                            <div class="degrade"></div>
+                            <div class="title-anime"><h1>One Piece</h1></div>
+                        </div>
+                    </div>
+
 id="animeResults"
 
 <div class="degrade-horizontal-rounded">

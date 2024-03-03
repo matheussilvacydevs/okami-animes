@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/fonts/Minecraft.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +14,144 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* SECTIONS BACKGROUND */
+
+section.semanais{
+    background-color: #000000;
+  }
+
+  section.cards-section{
+    background-color: #eeeeee;
+  }
+
+.owl-carousel .owl-nav {
+    display: none; /* Tornar as setas invisíveis */
+}
+
+.container {
+    text-decoration: none; /* Remover sublinhado de links */
+}
+
+.upper {
+    text-align: center;
+    font-style: normal;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    transition: .2s;
+    cursor: none;
+    order: -1; /* Coloca o elemento acima */
+}
+
+.lower {
+    cursor: none;
+    font-style: normal;
+    font-weight: 800;
+    font-family: 'Minecraft', sans-serif;
+    color: #00ff08;
+    transition: .2s;
+    font-size: 29px;
+}
+
+
+
 body {
     
     min-height: 100vh;
     transition: all 0.3s ease;
 }
+
+/* EFEITOS FLIPPER */
+
+.scroll-view {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+  }
+  
+  .linear-layout {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+  }
+  
+  .horizontal-layout {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 2px;
+  }
+  
+  .line {
+    height: 1px;
+    margin: 0 2px;
+  }
+  
+  .view-flipper {
+    animation: flip 2s infinite;
+  }
+  
+  @keyframes flip {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .flip-text {
+    font-family: 'Minecraft', sans-serif;
+    color: #fdfdfde7;
+    margin: 0 4px;
+  }
+  
+
+.flipper-container {
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flipper:hover {
+    transform: rotateY(-180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #ccc;
+}
+
+
 
 
 .search-box button{
@@ -31,15 +171,18 @@ body {
     right: 0;
     height: 100vh;
     width: 250px;
-    padding: 10px 14px;
-    background: #242526;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: auto;
+    background: #000000;
     transition: all 0.3s ease;
     z-index: 100;
 }
 
 .sidebar.close {
-    background-color: rgb(0, 0, 0);
-    width: 88px;
+    padding-right: 90px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 80px;
 }
 
 header {
@@ -64,7 +207,7 @@ header img {
 .sidebar .toggle {
     position: absolute;
     top: 5%;
-    right: 30px;
+    right: 12px;
     height: 25px;
     width: 25px;
     display: flex;
@@ -155,21 +298,6 @@ li a:hover .text {
     color: #242526;
 }
 
-.upper {
-    text-decoration: none;
-    font-weight: 800;
-    text-align: center;
-    color: rgb(204, 0, 0);
-}
-
-.lower {
-    text-decoration: none;
-    font-size: 28px;
-    font-family: "Rubik Wet Paint", system-ui;
-    font-weight: 800;
-    font-style: normal;
-    color: rgb(204, 0, 0);
-}
 
 .bi bi-person-circle i {
     font-size: 40px;
@@ -261,11 +389,10 @@ section .interface {
 }
 
 img {
-    margin-top: 05px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin-left: 189px;
-    width: 80%;
+    
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -286,25 +413,7 @@ img {
 /*background-image: linear-gradient(to right, #000000, #0c0c0c94, #0c0c0c);*/
 
 
-.cardflex img{
-    transform: translate(-0.25rem, -0.25rem);
-    box-shadow: 0.50rem 0.45rem 0rem rgb(255, 255, 255);
-    margin-bottom: 10px;
-    margin-top: 120px;
-    border-radius: 25px;
-    width: 60%;
-    background-size: cover; /* Para cobrir todo o espaço */
-    background-position: center; /* Para centralizar a imagem */
-}
 
-
-.descri-anime {
-    z-index: 20;
-    padding: 10px 4%;
-    margin-top: 120px;
-    color: white;
-    
-}
 
 .title-anime {
     position: absolute;
@@ -315,22 +424,24 @@ img {
 }
 
 .des-anime {
+    
     font-weight: 500;
     white-space: pre-line;
     position: absolute;
-    bottom: 30%;
+    bottom: 275px;
     left: 90px;
-    color: rgba(255, 255, 255, 0.705);
+    color: rgba(255, 255, 255, 0.863);
     z-index: 2;
 }
+
 
 .des-anime2{
     font-weight: 500;
     white-space: pre-line;
     position: absolute;
-    bottom: 23%;
+    bottom: 300px;
     left: 90px;
-    color: rgba(255, 255, 255, 0.705);
+    color: rgba(255, 255, 255, 0.863);
     z-index: 2;
 }
 
@@ -338,7 +449,7 @@ img {
     font-weight: 500;
     white-space: pre-line;
     position: absolute;
-    bottom: 35%;
+    bottom: 300px;
     left: 90px;
     color: rgba(255, 255, 255, 0.705);
     z-index: 2;
@@ -348,9 +459,149 @@ img {
     font-weight: 500;
     white-space: pre-line;
     position: absolute;
-    bottom: 35%;
+    bottom: 250px;
     left: 90px;
     color: rgba(255, 255, 255, 0.705);
     z-index: 2;
 }
 
+.slider.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.title-anime img {
+    width: 100%;
+    height: 95px;
+}
+
+
+.scrollable-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .scrollable-content {
+    display: inline-block;
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 24px;
+  }
+  
+  .scroll-btn-left {
+    left: 0;
+  }
+  
+  .scroll-btn-right {
+    right: 0;
+  }
+  
+
+.cards-section{
+    padding: 10px 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+
+  /* CARDS SLIDER */
+
+  h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .crean-bg {
+    background-color: #0c0c0c;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .card {
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    transition: .3s;
+  }
+
+  /*.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px transparent;
+  } */
+
+  .card-img {
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+
+
+  .card h3 {
+    text-transform: uppercase;
+    color: rgb(177, 177, 177);
+    font-size: .8rem;
+  }
+
+
+  .card h2 {
+    text-align: center;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Isso adicionará reticências (...) ao texto se ele for muito longo */
+    color: #00f014;
+  }
+
+  .card h4 {
+    color: #00f014;
+  }
+
+  /* PARAGRAFO DENTRO DO CARD RESPONSIVO */
+  .card p {
+    font-size: small;
+    line-height: 1.4em;
+  }
+
+  .card .icones1{
+    margin-left: 42px;
+  }
+
+
+  .card button{
+    color: #000;
+    background-color: #00bb28;
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.20rem 0.25rem 0rem #eeeeee;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block; /* Para que o botão ocupe toda a largura disponível */
+  }
+
+
+  /* PAI DE TODOS */
+
+  section{
+    background-color: #000000;
+  }
+  .container h3{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    color: #00f014;
+  }
