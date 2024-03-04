@@ -496,7 +496,7 @@
         <div class="line" style="background-color: #01ff16a0; flex: 1;"></div>
         <div class="circle" style="background-color: #1aff05a0;"></div>
         <div class="view-flipper">
-          <p class="flip-text">ANIMES MAIS ASSISTIDOS</p>
+          <p class="flip-text">CONTINUAR ASSISTINDO</p>
           <p class="flip-text"></p>
         </div>
         <div class="circle" style="background-color: #00ff0d;"></div>
@@ -555,64 +555,71 @@
         
     </section>
 
-
-    
-    <section class="cards-section" id="animeResults">
-        <!-- Os cards dos animes serão exibidos aqui -->
-    </section>
-    
-    <style>
-        
-    
-        .anime-card img {
-            height: 80%;
-            width: 80%;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
-        }
-    
-        .anime-card .card-body {
-            padding: 15px;
-        }
-    
-        .anime-card h5.card-title {
-            margin-bottom: 0;
-            font-size: 14px;
-            color: #333;
-        }
-    </style>
-    
-    <script>
-        window.addEventListener('DOMContentLoaded', async () => {
-            const response = await fetch('https://api.jikan.moe/v4/anime?sfw');
-            const data = await response.json();
-            const animeResultsSection = document.getElementById('animeResults');
-    
-            if (data.data.length > 0) {
-                data.data.forEach(anime => {
-                    const animeCard = document.createElement('div');
-                    animeCard.classList.add('anime-card', 'mx-2');
-                    animeCard.style = 'width: 18rem;';
-    
-                    animeCard.innerHTML = `
-                        <img src="${anime.images.jpg.large_image_url}" class="card-img-top" alt="${anime.title}">
-                        <div class="card-body">
-                            <h5 class="card-title">${anime.title}</h5>
-                        </div>
-                    `;
-    
-                    animeResultsSection.appendChild(animeCard);
-                });
-            } else {
-                const noResultsMessage = document.createElement('p');
-                noResultsMessage.textContent = 'No results found.';
-                animeResultsSection.appendChild(noResultsMessage);
-            }
-        });
-    </script>
-    
-      
    
+
+    <section class="body-section">
+        <div class="wrapper">
+            <div class="container">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h4>Classrom Elite</h4>
+                            <p>Ayanokouji é matriculado em uma escola de última geração, mas acaba caindo em uma sala onde ficam apenas os alunos com algum tipo de problema disciplinar.</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h4>Mashle</h4>
+                            <p>Num mundo onde a magia domina, era uma vez Mash Burnedead! Criado nas profundezas da floresta.</p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h4>Blue Exorcist</h4>
+                            <p>A história gira em torno de Rin Okumura, um adolescente que descobre que ele é o filho de Satã </p>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <h4>shangri-la frontier</h4>
+                            <p>Rakurou Hizutome, um rapaz apaixonado por jogos ruins, encontra seu próximo desafio em Shangri-la Frontier.</p>
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="scroll-view">
+            <div class="linear-layout" id="openc">
+              <div class="horizontal-layout">
+                <div class="circle" style="background-color: #00ff37a0;"></div>
+                <div class="line" style="background-color: #01ff16a0; flex: 1;"></div>
+                <div class="circle" style="background-color: #1aff05a0;"></div>
+                <div class="view-flipper">
+                  <p class="flip-text">CONTINUAR ASSISTINDO</p>
+                  <p class="flip-text"></p>
+                </div>
+                <div class="circle" style="background-color: #00ff0d;"></div>
+                <div class="line" style="background-color: #3cff00a0; flex: 1;"></div>
+                <div class="circle" style="background-color: #00ff37a0;"></div>
+              </div>
+            </div>
+          </div>
+    </section>
 
     <script src="script.js"></script>
 </body>

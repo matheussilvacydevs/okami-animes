@@ -200,3 +200,61 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+
+const getAnime = async () => {
+  const response = await axios.get('https://api.jikan.moe/v4/anime?sfw&limit=10');
+  const data = response.data;
+  // Processar os dados da API
+};
+
+getAnime();
+
+
+const results = data.data;
+
+for (const anime of results) {
+  const h3 = document.createElement('h3');
+  h3.textContent = anime.title;
+
+  const img = document.createElement('img');
+  img.src = anime.image_url;
+  img.alt = anime.title;
+
+  const animeResult = document.createElement('div');
+  animeResult.appendChild(h3);
+  animeResult.appendChild(img);
+
+  document.getElementById('animeResults').appendChild(animeResult);
+}
+
+
+async function fetchAndDisplayAnimes() {
+    const response = await fetch('https://api.jikan.moe/v4/anime?sfw');
+    const data = await response.json();
+    
+    const animesContainer = document.getElementById('animeResults');
+    
+    // Loop pelos resultados da API
+    data.data.forEach(anime => {
+      const animeDiv = document.createElement('div');
+      animeDiv.classList.add('anime');
+      
+      const animeTitle = document.createElement('h3');
+      animeTitle.textContent = anime.title;
+      
+      const animeImage = document.createElement('img');
+      animeImage.src = anime.cover_image;
+      animeImage.alt = anime.title;
+      
+      animeDiv.appendChild(animeTitle);
+      animeDiv.appendChild(animeImage);
+      
+      animesContainer.appendChild(animeDiv);
+    });
+  }
+
+  // Chamada da função para buscar e exibir os animes ao carregar a página
+  fetchAndDisplayAnimes();

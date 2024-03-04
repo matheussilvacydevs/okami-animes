@@ -605,3 +605,237 @@ img {
     padding: 10px 0;
     color: #00f014;
   }
+
+  .anime {
+    color: #00bb28;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+  }
+  .anime img {
+    max-width: 200px;
+    max-height: 300px;
+  }
+
+  
+  .animes-page .slider {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .animes-page .anime-card {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  .animes-page .anime-img {
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 10px;
+  }
+
+  .animes-page .anime-title {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #ffffff;
+    padding: 3px;
+  }
+
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00ff08;
+  }
+
+  
+  .assistindo .card{
+    border-radius: 25px;
+    border-color: #ffffff;
+  }
+
+  /* CLASSE ASSISTINDO */
+
+  /* Reset de estilos para todos os elementos dentro da body-section */
+
+  .body-section {
+    background-color: #000000;
+}
+
+.body-section * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos para o corpo da página dentro da body-section */
+
+.body-section body {
+    background-color: #eeeeea;
+}
+
+/* Estilos para a wrapper dentro da body-section */
+
+.body-section .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o container dentro da body-section */
+
+.body-section .container {
+  margin-top: 28px;
+  margin-bottom: 28px;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+/* Estilos para os cartões dentro da body-section */
+
+/* Estilos para os cartões dentro da body-section */
+
+.body-section .card {
+  width: 80px;
+  height: 400px; /* Altura ajustada para acomodar a imagem */
+  border-radius: .75rem;
+  background-size: cover; /* Redimensiona a imagem para cobrir completamente o card */
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  border-color: #00ff08;
+  display: flex;
+  align-items: flex-end;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+
+/* Estilos para as linhas dentro dos cartões dentro da body-section */
+
+.body-section .card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+/* Estilos para o ícone dentro das linhas dentro dos cartões dentro da body-section */
+
+.body-section .card > .row > .icon {
+    background: rgb(0, 0, 0);
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    border-color: white;
+    height: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    margin-top: 300px;
+}
+
+/* Estilos para a descrição dentro das linhas dentro dos cartões dentro da body-section */
+
+.body-section .card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    margin-top: 290px;
+    margin-right: 200px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.body-section .description p {
+  padding-top: 50px;
+  font-weight: 500;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.body-section .flip-text{
+  margin: 0 8px;
+  font-family: 'Minecraft';
+}
+
+.body-section .line{
+  margin-left: 3px;
+}
+
+.body-section .circle{
+  margin: 0 6px;
+}
+
+.body-section .description h4 {
+  text-shadow: 9px 4px 4px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto */
+  font-family: 'Minecraft';
+    text-transform: uppercase;
+}
+
+/* Estilos para os inputs dentro da body-section */
+
+.body-section input {
+    display: none;
+}
+
+/* Estilos para os inputs checados dentro da body-section */
+
+.body-section input:checked + label {
+  background-size: cover; /* Redimensiona a imagem para cobrir completamente o card */
+    width: 800px;
+}
+
+
+.body-section input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Estilos específicos para cada cartão dentro da body-section */
+
+.body-section .card[for="c1"] {
+  object-fit: cover;
+  background-image: url('https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/42e809bd-f025-4b88-b21e-f1aae392427e.webp');
+}
+
+.body-section .card[for="c2"] {
+  object-fit: cover;
+  background-image: url('https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/20f3f0d4-0fdd-458b-8aec-28961c1e91b0.webp');
+}
+
+.body-section .card[for="c3"] {
+  object-fit: cover;
+  background-image: url('https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/cdceb41d-05bf-4793-8df9-86acb4569f4e.webp');
+}
+
+.body-section .card[for="c4"] {
+  object-fit: cover;
+  background-image: url('https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/b6e07b80-e5a7-48c6-8919-0aa7c3e70abb.webp');
+}

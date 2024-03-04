@@ -1,3 +1,55 @@
+
+
+<!--<section class="assistindo">
+        <div class="slider-container">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="https://img.freepik.com/free-psd/studio-portrait-young-teenage-girl_23-2150162484.jpg?w=740&t=st=1709458431~exp=1709459031~hmac=67b224c550da195b60c855c33c4e1f5e0fd331d043c1b6255e921f204bc832a6" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Continuar Assistindo</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section> -->
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="image-container">
                             <img src="https://static.crunchyroll.com/fms/landscape_large/1920x1080/94/png/42e809bd-f025-4b88-b21e-f1aae392427e.webp" alt="Imagem 1">
                             <div class="degrade"></div>
